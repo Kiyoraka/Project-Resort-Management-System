@@ -1,5 +1,18 @@
 # List of ignore folder and files
 /[Tt]emp/
+Project Resources/
+
 # List of ignore files
 *.exe
 *.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Local data
+*.log
