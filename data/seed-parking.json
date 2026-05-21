@@ -1,0 +1,218 @@
+[
+  {
+    "id": "slot-1-1",
+    "code": "P-01",
+    "row": 1,
+    "col": 1,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-1-2",
+    "code": "P-02",
+    "row": 1,
+    "col": 2,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-1-3",
+    "code": "P-03",
+    "row": 1,
+    "col": 3,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-1-4",
+    "code": "P-04",
+    "row": 1,
+    "col": 4,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-1-5",
+    "code": "P-05",
+    "row": 1,
+    "col": 5,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-1-6",
+    "code": "P-06",
+    "row": 1,
+    "col": 6,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-2-1",
+    "code": "P-07",
+    "row": 2,
+    "col": 1,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-2-2",
+    "code": "P-08",
+    "row": 2,
+    "col": 2,
+    "status": "maintenance",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-2-3",
+    "code": "P-09",
+    "row": 2,
+    "col": 3,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-2-4",
+    "code": "P-10",
+    "row": 2,
+    "col": 4,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-2-5",
+    "code": "P-11",
+    "row": 2,
+    "col": 5,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-2-6",
+    "code": "P-12",
+    "row": 2,
+    "col": 6,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-3-1",
+    "code": "P-13",
+    "row": 3,
+    "col": 1,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-3-2",
+    "code": "P-14",
+    "row": 3,
+    "col": 2,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-3-3",
+    "code": "P-15",
+    "row": 3,
+    "col": 3,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-3-4",
+    "code": "P-16",
+    "row": 3,
+    "col": 4,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-3-5",
+    "code": "P-17",
+    "row": 3,
+    "col": 5,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-3-6",
+    "code": "P-18",
+    "row": 3,
+    "col": 6,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-4-1",
+    "code": "P-19",
+    "row": 4,
+    "col": 1,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-4-2",
+    "code": "P-20",
+    "row": 4,
+    "col": 2,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-4-3",
+    "code": "P-21",
+    "row": 4,
+    "col": 3,
+    "status": "maintenance",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-4-4",
+    "code": "P-22",
+    "row": 4,
+    "col": 4,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-4-5",
+    "code": "P-23",
+    "row": 4,
+    "col": 5,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "slot-4-6",
+    "code": "P-24",
+    "row": 4,
+    "col": 6,
+    "status": "available",
+    "ratePerHour": 5.00,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  }
+]
