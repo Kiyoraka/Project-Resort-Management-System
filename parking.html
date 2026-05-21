@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parking - KIYO COAST</title>
+  <meta name="description" content="24 parking slots at Kiyo Coast. RM5/hour, open 24/7. Live availability and reservations.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/parking-map.css">
+</head>
+<body>
+  <div data-component="site-header"></div>
+
+  <!-- Hero -->
+  <section class="hero hero--sm parking__hero">
+    <div class="hero__media">
+      <img src="assets/img/parking-aerial.jpg" alt="">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <h1 class="hero__title">Park easy. Stay long.</h1>
+      <p class="hero__subtitle">24 slots. RM5/hour. Open 24/7.</p>
+    </div>
+  </section>
+
+  <!-- Info strip -->
+  <section class="section">
+    <div class="container">
+      <div class="parking__info grid grid--3">
+        <div class="card">
+          <h3 class="card__title">Rate</h3>
+          <p class="card__body">RM 5 per hour. No daily cap. SST included.</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Hours</h3>
+          <p class="card__body">24 hours, 7 days. Guards on patrol 18:00&ndash;06:00.</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Location</h3>
+          <p class="card__body">Bachok Cove, Kelantan. GPS: 6.07N, 102.45E.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live slot preview -->
+  <section class="section parking__preview">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Live Availability</p>
+        <h2 class="section__title">Slot preview</h2>
+        <p class="section__lead">A live view of today&rsquo;s parking layout. Reserve in advance to lock in your spot.</p>
+      </div>
+
+      <div class="parking-map" data-parking-map></div>
+
+      <div class="parking-map__legend">
+        <div class="parking-map__legend-item">
+          <span class="parking-map__legend-swatch parking-map__legend-swatch--available"></span>
+          Available
+        </div>
+        <div class="parking-map__legend-item">
+          <span class="parking-map__legend-swatch parking-map__legend-swatch--occupied"></span>
+          Occupied
+        </div>
+        <div class="parking-map__legend-item">
+          <span class="parking-map__legend-swatch parking-map__legend-swatch--maintenance"></span>
+          Maintenance
+        </div>
+      </div>
+
+      <p class="parking-map__stats" data-parking-stats>Loading slot availability&hellip;</p>
+
+      <div class="cluster cluster--center" style="margin-top: var(--space-5);">
+        <button class="btn btn--primary btn--lg" data-action="reserve-slot">Reserve a Slot</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <h4>Kiyo Coast</h4>
+        <p>Coastal sanctuaries of Malaysia. Booked easy. Stayed long.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="resorts.html">Resorts</a></li>
+          <li><a href="stalls.html">Stalls</a></li>
+          <li><a href="parking.html">Parking</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="register.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">&copy; 2026 Kiyo Coast. All rights reserved.</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/components/toast.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/parking-map.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    (async () => {
+      // Wait for seed + DOM ready so localStorage is populated.
+      if (window.app && window.app.ready) {
+        try { await window.app.ready; } catch (_) { /* swallow */ }
+      }
+
+      const slots = (window.store && window.store.list('parking')) || [];
+      const bookings = (window.store && window.store.list('bookings')) || [];
+
+      const api = window.parkingMap && window.parkingMap.render('[data-parking-map]', {
+        slots: slots,
+        bookings: bookings,
+        interactive: false
+      });
+
+      const statsEl = document.querySelector('[data-parking-stats]');
+      if (api && statsEl) {
+        const s = api.getStats();
+        statsEl.textContent =
+          s.available + ' of ' + s.total + ' slots available · ' +
+          s.occupied + ' occupied · ' +
+          s.maintenance + ' maintenance';
+      } else if (statsEl) {
+        statsEl.textContent = 'Slot availability unavailable. Please refresh.';
+      }
+
+      const reserveBtn = document.querySelector('[data-action="reserve-slot"]');
+      if (reserveBtn) {
+        reserveBtn.addEventListener('click', () => {
+          const session = window.auth && window.auth.getSession && window.auth.getSession();
+          if (!session) {
+            window.location.href = 'login.html?denied=1';
+          } else {
+            window.location.href = 'user/parking.html';
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
