@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in - KIYO COAST</title>
+  <meta name="description" content="Sign in to your Kiyo Coast account.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <style>
+    /* page-specific layout — inline since no separate login.css file in plan */
+    .login__wrap {
+      min-height: calc(100vh - 72px);
+      display: flex; align-items: center; justify-content: center;
+      padding: var(--space-6) var(--space-4);
+      background: linear-gradient(180deg, var(--sand-50) 0%, var(--sand-100) 100%);
+    }
+    .login__card {
+      width: 100%; max-width: 460px;
+      background: var(--sand-50);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      padding: var(--space-6);
+    }
+    .login__title {
+      font-family: var(--font-display);
+      font-size: var(--fs-2xl);
+      margin-bottom: var(--space-1);
+      color: var(--ink-900);
+    }
+    .login__subtitle {
+      color: var(--ink-500);
+      margin-bottom: var(--space-5);
+    }
+    .login__field { margin-bottom: var(--space-4); }
+    .login__password-wrap { position: relative; }
+    .login__eye-toggle {
+      position: absolute; right: var(--space-3); top: 50%;
+      transform: translateY(-50%);
+      background: none; border: none; cursor: pointer;
+      color: var(--ink-500);
+      font-size: var(--fs-md);
+      padding: var(--space-1);
+    }
+    .login__row {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: var(--space-5);
+      font-size: var(--fs-sm);
+    }
+    .login__row a { color: var(--teal-500); }
+    .login__divider {
+      display: flex; align-items: center; gap: var(--space-3);
+      margin: var(--space-5) 0;
+      color: var(--ink-500);
+      font-size: var(--fs-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .login__divider::before, .login__divider::after {
+      content: ''; flex: 1; height: 1px; background: var(--sand-200);
+    }
+    .login__chips {
+      display: flex; flex-wrap: wrap; gap: var(--space-2);
+      margin-bottom: var(--space-3);
+    }
+    .login__chip-note {
+      font-size: var(--fs-xs);
+      color: var(--ink-500);
+      margin-bottom: var(--space-5);
+      text-align: center;
+    }
+    .login__footer { text-align: center; margin-top: var(--space-5); }
+    .login__danger-zone {
+      margin-top: var(--space-5);
+      padding-top: var(--space-5);
+      border-top: 1px solid var(--sand-200);
+      text-align: center;
+    }
+
+    /* shake animation for failed login */
+    @keyframes login-shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .login__card--shake { animation: login-shake 0.4s ease-in-out; }
+  </style>
+</head>
+<body>
+  <div data-component="site-header"></div>
+
+  <main class="login__wrap">
+    <div class="login__card" id="loginCard">
+      <h1 class="login__title">Welcome back</h1>
+      <p class="login__subtitle">Sign in to manage your stays, parking, or store.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field login__field">
+          <label class="label" for="loginEmail">Email</label>
+          <input class="input" type="email" id="loginEmail" name="email" autocomplete="email" required>
+          <span class="field__error" data-error-for="email"></span>
+        </div>
+
+        <div class="field login__field">
+          <label class="label" for="loginPassword">Password</label>
+          <div class="login__password-wrap">
+            <input class="input" type="password" id="loginPassword" name="password" autocomplete="current-password" required>
+            <button type="button" class="login__eye-toggle" aria-label="Show password" data-action="toggle-password">👁</button>
+          </div>
+          <span class="field__error" data-error-for="password"></span>
+        </div>
+
+        <div class="login__row">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+          <a href="#" data-action="forgot">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Sign in</button>
+      </form>
+
+      <div class="login__divider">or try a demo account</div>
+
+      <div class="login__chips" data-demo-chips>
+        <!-- chips injected by login.js -->
+      </div>
+      <p class="login__chip-note">All demo accounts use password <code>admin123</code></p>
+
+      <p class="login__footer">No account yet? <a href="register.html">Create one →</a></p>
+
+      <div class="login__danger-zone">
+        <button type="button" class="btn btn--danger btn--sm" data-action="reset-demo">Reset demo data</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS (end of body) -->
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/components/toast.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/login.js"></script>
+</body>
+</html>
