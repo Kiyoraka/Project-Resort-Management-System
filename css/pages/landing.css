@@ -1,0 +1,179 @@
+/* ============================================================
+   Landing page styles — Kiyo Coast
+   Modern Beach Resort 2026 aesthetic
+   ============================================================ */
+
+/* ----- About section: editorial 2-col asymmetric ----- */
+.landing__about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .landing__about-grid {
+    grid-template-columns: 1.1fr 1fr;
+    gap: var(--space-7);
+  }
+}
+
+.landing__about-image {
+  margin: 0;
+}
+
+.landing__about-image img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .landing__about-image {
+    transform: translateY(-32px);
+  }
+}
+
+.landing__about-text {
+  padding-block: var(--space-5);
+}
+
+.landing__about-text > p {
+  margin-block: var(--space-3) var(--space-5);
+  color: var(--ink-700);
+  line-height: var(--lh-relaxed, 1.7);
+}
+
+/* ----- Featured Resorts: staggered grid offset ----- */
+@media (min-width: 768px) {
+  .landing__resorts .grid--staggered > :nth-child(odd) {
+    margin-top: var(--space-6);
+  }
+}
+
+/* ----- Coastal Stalls Carousel ----- */
+.landing__carousel {
+  position: relative;
+  padding: 0 var(--space-7);
+}
+
+@media (max-width: 767px) {
+  .landing__carousel {
+    padding: 0 var(--space-4);
+  }
+}
+
+.landing__carousel-track {
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: var(--space-5);
+  scroll-behavior: smooth;
+  padding-block: var(--space-2);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.landing__carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.landing__carousel-track > .card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  .landing__carousel-track > .card {
+    flex: 0 0 320px;
+  }
+}
+
+.landing__carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-pill);
+  background: var(--sand-50);
+  border: 1px solid var(--sand-200);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-xl);
+  color: var(--ink-700);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease-soft);
+  z-index: 2;
+  line-height: 1;
+}
+
+.landing__carousel-btn:hover {
+  background: var(--teal-500);
+  color: #FFF;
+  border-color: var(--teal-500);
+}
+
+.landing__carousel-btn--prev {
+  left: var(--space-2);
+}
+
+.landing__carousel-btn--next {
+  right: var(--space-2);
+}
+
+/* ----- Parking CTA Banner ----- */
+.landing__parking-cta {
+  background: linear-gradient(135deg, var(--sand-200), var(--sand-300));
+  padding: var(--space-8) 0;
+}
+
+.landing__parking-cta .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .landing__parking-cta .container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.landing__parking-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  color: var(--ink-900);
+  max-width: 480px;
+  margin: 0;
+}
+
+/* ----- Reveal-on-scroll utility ----- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s var(--ease-soft), transform 0.8s var(--ease-soft);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
