@@ -1,0 +1,164 @@
+[
+  {
+    "id": "resort-1",
+    "name": "Bachok Cove",
+    "location": "Bachok, Kelantan",
+    "description": "A barefoot-luxury hideaway on Malaysia's eastern shore, where sunrise spills across the South China Sea and palm-shaded verandas open straight onto soft, golden sand.",
+    "tagline": "Where the tide greets the shore",
+    "cover": "assets/img/bachok-cove-hero.jpg",
+    "gallery": [
+      "assets/img/bachok-1.jpg",
+      "assets/img/bachok-2.jpg",
+      "assets/img/bachok-3.jpg"
+    ],
+    "ownerId": "user-resort1",
+    "amenities": [
+      "Pool",
+      "Garden",
+      "Restaurant",
+      "Parking",
+      "Beach access",
+      "Spa"
+    ],
+    "phone": "+60 9-123 4567",
+    "email": "stay@bachokcove.my",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00",
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in.",
+    "rooms": [
+      {
+        "id": "room-resort-1-1",
+        "type": "Deluxe Room",
+        "capacity": 2,
+        "rate": 280,
+        "description": "Sea-view deluxe with king bed and private balcony.",
+        "image": "assets/img/bachok-deluxe.jpg",
+        "count": 6
+      },
+      {
+        "id": "room-resort-1-2",
+        "type": "Suite",
+        "capacity": 3,
+        "rate": 480,
+        "description": "Spacious suite with separate lounge, rain shower, and ocean-facing terrace.",
+        "image": "assets/img/bachok-suite.jpg",
+        "count": 4
+      },
+      {
+        "id": "room-resort-1-3",
+        "type": "Villa",
+        "capacity": 6,
+        "rate": 850,
+        "description": "Two-bedroom beachfront villa with plunge pool and private garden path to the sand.",
+        "image": "assets/img/bachok-villa.jpg",
+        "count": 2
+      }
+    ],
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "resort-2",
+    "name": "Cherating Bay",
+    "location": "Cherating, Pahang",
+    "description": "A laid-back surf-town retreat threaded with casual elegance, where heritage longhouses meet a quiet bay and the neighboring turtle sanctuary keeps watch over the shore.",
+    "tagline": "A bay that holds time still",
+    "cover": "assets/img/cherating-bay-hero.jpg",
+    "gallery": [
+      "assets/img/cherating-1.jpg",
+      "assets/img/cherating-2.jpg",
+      "assets/img/cherating-3.jpg"
+    ],
+    "ownerId": "user-resort2",
+    "amenities": [
+      "Pool",
+      "Surf School",
+      "Restaurant",
+      "Bar",
+      "Parking",
+      "Beach access",
+      "Yoga deck"
+    ],
+    "phone": "+60 9-432 1098",
+    "email": "stay@cheratingbay.my",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00",
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in.",
+    "rooms": [
+      {
+        "id": "room-resort-2-1",
+        "type": "Deluxe Room",
+        "capacity": 2,
+        "rate": 320,
+        "description": "Garden-facing deluxe with timber accents, king bed, and outdoor rain shower.",
+        "image": "assets/img/cherating-deluxe.jpg",
+        "count": 8
+      },
+      {
+        "id": "room-resort-2-2",
+        "type": "Suite",
+        "capacity": 3,
+        "rate": 550,
+        "description": "Upper-floor suite with bay views, lounge nook, and a sunset-facing balcony.",
+        "image": "assets/img/cherating-suite.jpg",
+        "count": 6
+      },
+      {
+        "id": "room-resort-2-3",
+        "type": "Beach Villa",
+        "capacity": 4,
+        "rate": 920,
+        "description": "Standalone villa steps from the surf break, with deck, daybed, and private path to the bay.",
+        "image": "assets/img/cherating-beach-villa.jpg",
+        "count": 4
+      }
+    ],
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "resort-3",
+    "name": "Pangkor Sands",
+    "location": "Pangkor Island, Perak",
+    "description": "A west-coast island sanctuary facing the Straits of Malacca, where sunsets paint the water gold and a sleepy fishing village murmurs just beyond the coconut grove.",
+    "tagline": "Island calm, refined",
+    "cover": "assets/img/pangkor-sands-hero.jpg",
+    "gallery": [
+      "assets/img/pangkor-1.jpg",
+      "assets/img/pangkor-2.jpg",
+      "assets/img/pangkor-3.jpg"
+    ],
+    "ownerId": "user-resort3",
+    "amenities": [
+      "Pool",
+      "Restaurant",
+      "Parking",
+      "Beach access",
+      "Boat charter"
+    ],
+    "phone": "+60 5-555 1234",
+    "email": "stay@pangkorsands.my",
+    "checkInTime": "15:00",
+    "checkOutTime": "11:00",
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in.",
+    "rooms": [
+      {
+        "id": "room-resort-3-1",
+        "type": "Deluxe Room",
+        "capacity": 2,
+        "rate": 250,
+        "description": "Breezy deluxe with queen bed, rattan furnishings, and sunset-facing window.",
+        "image": "assets/img/pangkor-deluxe.jpg",
+        "count": 5
+      },
+      {
+        "id": "room-resort-3-2",
+        "type": "Villa",
+        "capacity": 4,
+        "rate": 680,
+        "description": "Two-bedroom villa tucked among palms, with open-air lounge and direct sand access.",
+        "image": "assets/img/pangkor-villa.jpg",
+        "count": 3
+      }
+    ],
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  }
+]
