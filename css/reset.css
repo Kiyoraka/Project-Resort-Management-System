@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Modern CSS Reset
+   Adapted from Andy Bell's modern reset (https://piccalil.li/blog/a-more-modern-css-reset/)
+   Tailored for Resort Management System — 2026 vanilla project.
+   No var() usage — this file runs before design tokens are loaded.
+   ========================================================================== */
+
+/* Box-sizing on all elements + pseudo-elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin from common block elements */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol,
+blockquote,
+figure,
+hr {
+  margin: 0;
+}
+
+/* Core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Remove list styles on ul/ol when role="list" is set */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+/* Anchors without a class inherit color + decoration */
+a:not([class]) {
+  color: currentColor;
+  text-decoration-skip-ink: auto;
+}
+
+/* Media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Form elements inherit typography */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Avoid text overflow */
+p,
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Baseline button reset — components.css adds real styles */
+button {
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
