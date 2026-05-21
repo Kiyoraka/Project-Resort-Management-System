@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resorts - KIYO COAST</title>
+  <meta name="description" content="Browse Kiyo Coast resorts — editorial luxury along Malaysia's east and west coastlines.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <style>
+    /* Page-specific styles for resorts.html */
+    .resorts__count {
+      color: var(--ink-500);
+      font-size: var(--fs-sm);
+      margin-top: var(--space-2);
+    }
+
+    .resorts__filters {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      align-items: stretch;
+      margin-bottom: var(--space-6);
+    }
+
+    @media (min-width: 768px) {
+      .resorts__filters {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .resorts__search {
+      max-width: 320px;
+    }
+
+    .chip.is-active {
+      background: var(--teal-500);
+      color: #fff;
+      border-color: var(--teal-500);
+    }
+
+    .resorts__empty {
+      text-align: center;
+      padding: var(--space-7) 0;
+      color: var(--ink-500);
+    }
+
+    .grid--staggered > *:nth-child(even) {
+      margin-top: var(--space-6);
+    }
+
+    .card__amenities {
+      margin-top: var(--space-2);
+      flex-wrap: wrap;
+    }
+
+    /* Reveal-on-scroll (resorts.html does not load landing.css) */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div data-component="site-header"></div>
+
+  <main class="page resorts-page">
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Stays</p>
+          <h1 class="section__title">Three shorelines. Three sanctuaries.</h1>
+          <p class="section__lead">Editorial luxury along Malaysia's east + west coasts.</p>
+          <p class="resorts__count"><span data-resort-count>3</span> resorts available</p>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="resorts__filters">
+          <div class="cluster" role="group" aria-label="Filter resorts">
+            <button class="chip is-active" data-filter="all" type="button">All</button>
+            <button class="chip" data-filter="beachfront" type="button">Beachfront</button>
+          </div>
+          <input class="input resorts__search" type="search" placeholder="Search by name or location..." aria-label="Search resorts" data-resort-search>
+        </div>
+
+        <!-- Card grid -->
+        <div class="grid grid--2 grid--staggered" data-resort-grid></div>
+
+        <!-- Empty state -->
+        <div class="resorts__empty" data-resort-empty hidden>
+          <p>No resorts match your search.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <h4>Kiyo Coast</h4>
+        <p>Coastal sanctuaries of Malaysia. Booked easy. Stayed long.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="resorts.html">Resorts</a></li>
+          <li><a href="stalls.html">Stalls</a></li>
+          <li><a href="parking.html">Parking</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="register.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">&copy; 2026 Kiyo Coast. All rights reserved.</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/components/toast.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/resorts.js"></script>
+</body>
+</html>
