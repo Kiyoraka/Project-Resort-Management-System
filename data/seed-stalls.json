@@ -1,0 +1,254 @@
+[
+  {
+    "id": "stall-1",
+    "name": "Nasi Dagang Mak Yah",
+    "category": "Food",
+    "description": "Mak Yah has been ladling out her family's Kelantan-style nasi dagang for over thirty years. The recipe — coconut-steamed rice paired with a slow-simmered tuna curry — has not changed since her mother first taught her at the kampung kitchen. Open mornings only, until the pot runs dry.",
+    "tagline": "Coconut rice & tuna curry, the Kelantan way",
+    "cover": "assets/img/stall-nasi-dagang.jpg",
+    "ownerId": "user-stall1",
+    "resortId": "resort-1",
+    "phone": "+60 19-111 2233",
+    "email": "salam@makyah.my",
+    "hours": "07:00 - 14:00",
+    "products": [
+      {
+        "id": "prod-stall-1-1",
+        "name": "Nasi Dagang Ikan Tongkol",
+        "category": "Food",
+        "price": 8.00,
+        "qty": 24,
+        "image": "assets/img/prod-nasi-dagang.jpg",
+        "description": "Coconut-milk rice with spiced tuna curry, served with pickled vegetables and a soft-boiled egg."
+      },
+      {
+        "id": "prod-stall-1-2",
+        "name": "Teh Tarik",
+        "category": "Drink",
+        "price": 4.00,
+        "qty": 100,
+        "image": "assets/img/prod-teh-tarik.jpg",
+        "description": "The classic pulled milk tea — strong, frothy, and sweet just the way the locals like it."
+      },
+      {
+        "id": "prod-stall-1-3",
+        "name": "Roti Jala with Kari",
+        "category": "Food",
+        "price": 4.00,
+        "qty": 30,
+        "image": "assets/img/prod-roti-jala.jpg",
+        "description": "Lacy net-pancakes folded over a fragrant chicken curry dip — a Kelantan tea-time favourite."
+      },
+      {
+        "id": "prod-stall-1-4",
+        "name": "Kuih Lapis",
+        "category": "Food",
+        "price": 2.00,
+        "qty": 3,
+        "image": "assets/img/prod-kuih-lapis.jpg",
+        "description": "Steamed nine-layer rice flour cake in pastel pinks and greens. Peel it apart layer by layer."
+      },
+      {
+        "id": "prod-stall-1-5",
+        "name": "Sirap Bandung",
+        "category": "Drink",
+        "price": 3.00,
+        "qty": 0,
+        "image": "assets/img/prod-sirap-bandung.jpg",
+        "description": "Rose syrup stirred into evaporated milk — pink, cold, and unmistakably nostalgic."
+      }
+    ],
+    "taxRate": 0.06,
+    "receiptFooter": "Terima kasih! Sila datang lagi.",
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "stall-2",
+    "name": "Coconut Shake Pakcik",
+    "category": "Drink",
+    "description": "Pakcik Hamid runs the beachfront's most beloved shake cart, blending freshly cracked coconuts with vanilla ice cream and a splash of evaporated milk. Watch the sunset over Bachok with one of his signature pours in hand.",
+    "tagline": "Fresh coconut, blended cold",
+    "cover": "assets/img/stall-coconut-shake.jpg",
+    "ownerId": "user-stall2",
+    "resortId": "resort-1",
+    "phone": "+60 19-222 3344",
+    "email": "pakcik@coconutshake.my",
+    "hours": "10:00 - 22:00",
+    "products": [
+      {
+        "id": "prod-stall-2-1",
+        "name": "Original Coconut Shake",
+        "category": "Drink",
+        "price": 6.00,
+        "qty": 50,
+        "image": "assets/img/prod-coconut-shake-original.jpg",
+        "description": "Fresh young coconut flesh and water blended with vanilla ice cream and crushed ice."
+      },
+      {
+        "id": "prod-stall-2-2",
+        "name": "Pandan Coconut Shake",
+        "category": "Drink",
+        "price": 7.00,
+        "qty": 40,
+        "image": "assets/img/prod-coconut-shake-pandan.jpg",
+        "description": "The original shake infused with fragrant pandan leaf syrup — green, silky, aromatic."
+      },
+      {
+        "id": "prod-stall-2-3",
+        "name": "Cendol Coconut Shake",
+        "category": "Drink",
+        "price": 8.00,
+        "qty": 35,
+        "image": "assets/img/prod-coconut-shake-cendol.jpg",
+        "description": "A dessert in a cup — coconut shake layered with cendol jelly, gula melaka, and red beans."
+      },
+      {
+        "id": "prod-stall-2-4",
+        "name": "Mineral Water",
+        "category": "Drink",
+        "price": 2.00,
+        "qty": 200,
+        "image": "assets/img/prod-mineral-water.jpg",
+        "description": "Chilled 500ml bottled mineral water. Sometimes you just need water."
+      }
+    ],
+    "taxRate": 0.06,
+    "receiptFooter": "Terima kasih! Sila datang lagi.",
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "stall-3",
+    "name": "Batik Crafts Aishah",
+    "category": "Crafts",
+    "description": "Aishah's family workshop in Cherating produces both hand-block (batik cap) and hand-drawn (batik tulis) textiles. Her motifs draw from the coastline — turtles, hibiscus, and waves — celebrating Pahang's marine conservation heritage.",
+    "tagline": "Hand-painted batik from Pahang",
+    "cover": "assets/img/stall-batik-aishah.jpg",
+    "ownerId": "user-stall3",
+    "resortId": "resort-2",
+    "phone": "+60 13-333 4455",
+    "email": "batik@aishah.my",
+    "hours": "09:00 - 18:00",
+    "products": [
+      {
+        "id": "prod-stall-3-1",
+        "name": "Batik Selendang",
+        "category": "Crafts",
+        "price": 45.00,
+        "qty": 20,
+        "image": "assets/img/prod-batik-selendang.jpg",
+        "description": "Lightweight hand-painted shawl in soft coastal palettes. Perfect as a scarf or wrap."
+      },
+      {
+        "id": "prod-stall-3-2",
+        "name": "Batik Sarung",
+        "category": "Crafts",
+        "price": 85.00,
+        "qty": 15,
+        "image": "assets/img/prod-batik-sarung.jpg",
+        "description": "Traditional wrap-skirt length of batik tulis with hibiscus and wave motifs."
+      },
+      {
+        "id": "prod-stall-3-3",
+        "name": "Batik Shirt — Mens",
+        "category": "Crafts",
+        "price": 120.00,
+        "qty": 12,
+        "image": "assets/img/prod-batik-shirt-mens.jpg",
+        "description": "Tailored short-sleeve mens shirt in hand-block batik. Cool cotton, statement print."
+      },
+      {
+        "id": "prod-stall-3-4",
+        "name": "Batik Dress — Womens",
+        "category": "Crafts",
+        "price": 150.00,
+        "qty": 10,
+        "image": "assets/img/prod-batik-dress-womens.jpg",
+        "description": "Flowing A-line dress in batik tulis. Resort-ready, beautifully drapey."
+      },
+      {
+        "id": "prod-stall-3-5",
+        "name": "Batik Pouch",
+        "category": "Crafts",
+        "price": 25.00,
+        "qty": 30,
+        "image": "assets/img/prod-batik-pouch.jpg",
+        "description": "Zip pouch lined with cotton — handy for cosmetics, cards, or beach essentials."
+      },
+      {
+        "id": "prod-stall-3-6",
+        "name": "Mini Wall Hanging",
+        "category": "Crafts",
+        "price": 65.00,
+        "qty": 8,
+        "image": "assets/img/prod-batik-wall-hanging.jpg",
+        "description": "Framed mini batik panel featuring a hand-drawn sea turtle motif. A keepsake of the coast."
+      }
+    ],
+    "taxRate": 0.06,
+    "receiptFooter": "Terima kasih! Sila datang lagi.",
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "stall-4",
+    "name": "Beach Gear & Rentals",
+    "category": "Rentals",
+    "description": "Razali stocks the things every island guest forgets to pack — snorkel sets, paddleboards, beach chairs, umbrellas, and reef shoes. Friendly day-rates, sand-tested gear, and a free tide chart with every rental.",
+    "tagline": "Everything you forgot to pack",
+    "cover": "assets/img/stall-beach-gear.jpg",
+    "ownerId": "user-stall4",
+    "resortId": "resort-3",
+    "phone": "+60 12-444 5566",
+    "email": "rentals@beachgear.my",
+    "hours": "08:00 - 19:00",
+    "products": [
+      {
+        "id": "prod-stall-4-1",
+        "name": "Snorkel Set — Day Rental",
+        "category": "Rentals",
+        "price": 35.00,
+        "qty": 15,
+        "image": "assets/img/prod-snorkel-set.jpg",
+        "description": "Mask, snorkel, and fins in adult sizes. Perfect for Pangkor's reef pools."
+      },
+      {
+        "id": "prod-stall-4-2",
+        "name": "Beach Chair — Day Rental",
+        "category": "Rentals",
+        "price": 25.00,
+        "qty": 25,
+        "image": "assets/img/prod-beach-chair.jpg",
+        "description": "Folding hardwood beach chair with reclining back. Comfortable for all-day lounging."
+      },
+      {
+        "id": "prod-stall-4-3",
+        "name": "Beach Umbrella — Day Rental",
+        "category": "Rentals",
+        "price": 30.00,
+        "qty": 20,
+        "image": "assets/img/prod-beach-umbrella.jpg",
+        "description": "Large UPF-50 beach umbrella with sand anchor. Shade for two."
+      },
+      {
+        "id": "prod-stall-4-4",
+        "name": "Stand-Up Paddleboard — Hourly",
+        "category": "Rentals",
+        "price": 45.00,
+        "qty": 8,
+        "image": "assets/img/prod-paddleboard.jpg",
+        "description": "Inflatable SUP with paddle and ankle leash. Beginner-friendly stability."
+      },
+      {
+        "id": "prod-stall-4-5",
+        "name": "Reef Shoes — Pair",
+        "category": "Rentals",
+        "price": 15.00,
+        "qty": 40,
+        "image": "assets/img/prod-reef-shoes.jpg",
+        "description": "Protective neoprene reef shoes. Various sizes — keeps your feet safe on coral and rocks."
+      }
+    ],
+    "taxRate": 0.06,
+    "receiptFooter": "Terima kasih! Sila datang lagi.",
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  }
+]
