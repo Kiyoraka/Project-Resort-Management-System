@@ -1,0 +1,182 @@
+[
+  {
+    "id": "msg-001",
+    "threadId": "thread-001",
+    "fromUserId": "user-admin",
+    "toUserId": "user-stall1",
+    "subject": "Stock report due Friday",
+    "body": "Salam Mak Yah, please submit your weekly stock report by Friday afternoon so we can update the central inventory dashboard. Let me know if you need help with the new form.",
+    "read": false,
+    "createdAt": "2026-05-19T10:23:00.000Z"
+  },
+  {
+    "id": "msg-002",
+    "threadId": "thread-001",
+    "fromUserId": "user-stall1",
+    "toUserId": "user-admin",
+    "subject": "Re: Stock report due Friday",
+    "body": "Salam admin, terima kasih for the reminder. I will send the report tomorrow morning when the kitchen quiets down. Boleh saya guna the same format as last month?",
+    "read": true,
+    "createdAt": "2026-05-19T14:45:00.000Z"
+  },
+  {
+    "id": "msg-003",
+    "threadId": "thread-002",
+    "fromUserId": "user-admin",
+    "toUserId": "user-resort1",
+    "subject": "May occupancy review",
+    "body": "Hi Aminah, May occupancy is trending 84% which is wonderful. Wanted to share that two corporate inquiries came in via the contact form for June - I forwarded them to your stay@bachokcove.my. Please respond within 48 hours.",
+    "read": true,
+    "createdAt": "2026-05-15T09:11:00.000Z"
+  },
+  {
+    "id": "msg-004",
+    "threadId": "thread-002",
+    "fromUserId": "user-resort1",
+    "toUserId": "user-admin",
+    "subject": "Re: May occupancy review",
+    "body": "Thank you admin! I have replied to both corporate inquiries. One is asking about a 12-room block for July team retreat - might need to coordinate with you on group rate.",
+    "read": true,
+    "createdAt": "2026-05-15T15:30:00.000Z"
+  },
+  {
+    "id": "msg-005",
+    "threadId": "thread-003",
+    "fromUserId": "user-user1",
+    "toUserId": "user-resort2",
+    "subject": "Cherating Beach Villa booking question",
+    "body": "Hi Faizal, I booked the Beach Villa for 28-30 May (book-003). My family of 3 includes a 4-year-old child. Do you have a baby cot we could borrow during the stay? Also, is the villa pet-friendly? We have a small dog.",
+    "read": false,
+    "createdAt": "2026-05-19T08:30:00.000Z"
+  },
+  {
+    "id": "msg-006",
+    "threadId": "thread-004",
+    "fromUserId": "user-admin",
+    "toUserId": "user-resort2",
+    "subject": "Surf school booking integration",
+    "body": "Faizal, the IT team is exploring whether we can add Surf School lessons as a bookable add-on during checkout for Cherating guests. Would this be useful for your operation? If yes, please send me your standard lesson rates and instructor availability.",
+    "read": true,
+    "createdAt": "2026-05-10T11:00:00.000Z"
+  },
+  {
+    "id": "msg-007",
+    "threadId": "thread-004",
+    "fromUserId": "user-resort2",
+    "toUserId": "user-admin",
+    "subject": "Re: Surf school booking integration",
+    "body": "Yes please admin! Currently we lose 30% of interested guests because they need to walk down to the school after check-in. Beginner lesson RM120/90min, intermediate RM180/2hr, board rental RM80/4hr. Two instructors weekday, three weekend.",
+    "read": true,
+    "createdAt": "2026-05-10T14:25:00.000Z"
+  },
+  {
+    "id": "msg-008",
+    "threadId": "thread-004",
+    "fromUserId": "user-admin",
+    "toUserId": "user-resort2",
+    "subject": "Re: Surf school booking integration",
+    "body": "Perfect - thank you for the rates. I will brief Kiyo on this and we will scope a phase-2 add-on flow. Targeting Q3.",
+    "read": true,
+    "createdAt": "2026-05-10T15:10:00.000Z"
+  },
+  {
+    "id": "msg-009",
+    "threadId": "thread-005",
+    "fromUserId": "user-user2",
+    "toUserId": "user-stall3",
+    "subject": "Custom batik order inquiry",
+    "body": "Hi Aishah, your batik dress collection is beautiful. Do you accept custom orders? My wife and I would like 4 matching batik shirts for our family reunion in August - sizes M, L, L, XL. Budget around RM500-600 total. Possible?",
+    "read": false,
+    "createdAt": "2026-05-20T19:42:00.000Z"
+  },
+  {
+    "id": "msg-010",
+    "threadId": "thread-006",
+    "fromUserId": "user-admin",
+    "toUserId": "user-stall4",
+    "subject": "Equipment safety audit reminder",
+    "body": "Razali, the half-yearly safety audit for rental equipment (paddleboards, snorkel sets, beach chairs) is due end of May. Please confirm all gear has been inspected and any items beyond useful life have been retired. Audit report template attached.",
+    "read": true,
+    "createdAt": "2026-05-12T10:00:00.000Z"
+  },
+  {
+    "id": "msg-011",
+    "threadId": "thread-006",
+    "fromUserId": "user-stall4",
+    "toUserId": "user-admin",
+    "subject": "Re: Equipment safety audit reminder",
+    "body": "Audit completed last week. Retired 3 snorkel masks (seal degradation), 1 paddleboard (hull crack), 5 beach chairs (frame fatigue). Replacement orders placed. Full report sent to ops@kiyocoast.my Friday.",
+    "read": true,
+    "createdAt": "2026-05-15T16:20:00.000Z"
+  },
+  {
+    "id": "msg-012",
+    "threadId": "thread-007",
+    "fromUserId": "user-resort3",
+    "toUserId": "user-admin",
+    "subject": "Booking platform feedback",
+    "body": "Admin, quick feedback after one week using the new dashboard - the booking inbox is much faster than the old system. One request: can we add a way to bulk-confirm multiple pending bookings at once? Sometimes I get 5-6 pending at once from group inquiries.",
+    "read": false,
+    "createdAt": "2026-05-18T20:15:00.000Z"
+  },
+  {
+    "id": "msg-013",
+    "threadId": "thread-008",
+    "fromUserId": "user-admin",
+    "toUserId": "user-resort1",
+    "subject": "Monthly owner sync — June scheduling",
+    "body": "Hi all three resort owners, the June owner sync call needs a new slot since the original Tuesday clashes with Hari Raya Haji week. Proposing Thursday 11 June 3pm MYT via Zoom. Please confirm in this thread.",
+    "read": true,
+    "createdAt": "2026-05-19T16:00:00.000Z"
+  },
+  {
+    "id": "msg-014",
+    "threadId": "thread-008",
+    "fromUserId": "user-admin",
+    "toUserId": "user-resort2",
+    "subject": "Monthly owner sync — June scheduling",
+    "body": "Hi all three resort owners, the June owner sync call needs a new slot since the original Tuesday clashes with Hari Raya Haji week. Proposing Thursday 11 June 3pm MYT via Zoom. Please confirm in this thread.",
+    "read": true,
+    "createdAt": "2026-05-19T16:00:01.000Z"
+  },
+  {
+    "id": "msg-015",
+    "threadId": "thread-008",
+    "fromUserId": "user-admin",
+    "toUserId": "user-resort3",
+    "subject": "Monthly owner sync — June scheduling",
+    "body": "Hi all three resort owners, the June owner sync call needs a new slot since the original Tuesday clashes with Hari Raya Haji week. Proposing Thursday 11 June 3pm MYT via Zoom. Please confirm in this thread.",
+    "read": false,
+    "createdAt": "2026-05-19T16:00:02.000Z"
+  },
+  {
+    "id": "msg-016",
+    "threadId": "thread-008",
+    "fromUserId": "user-resort1",
+    "toUserId": "user-admin",
+    "subject": "Re: Monthly owner sync — June scheduling",
+    "body": "Confirmed for Thursday 11 June 3pm. Will dial in from Bachok office.",
+    "read": true,
+    "createdAt": "2026-05-19T17:30:00.000Z"
+  },
+  {
+    "id": "msg-017",
+    "threadId": "thread-008",
+    "fromUserId": "user-resort2",
+    "toUserId": "user-admin",
+    "subject": "Re: Monthly owner sync — June scheduling",
+    "body": "Confirmed. Might be 5min late - school pickup window.",
+    "read": true,
+    "createdAt": "2026-05-20T08:15:00.000Z"
+  },
+  {
+    "id": "msg-018",
+    "threadId": "thread-008",
+    "fromUserId": "user-resort3",
+    "toUserId": "user-admin",
+    "subject": "Re: Monthly owner sync — June scheduling",
+    "body": "Confirmed. Will be on the island that day - signal usually solid by the harbour.",
+    "read": false,
+    "createdAt": "2026-05-20T11:45:00.000Z"
+  }
+]
