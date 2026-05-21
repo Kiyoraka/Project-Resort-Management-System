@@ -1,0 +1,199 @@
+/* ============================================================
+   base.css — Element-level defaults
+   Resort Management System
+   ------------------------------------------------------------
+   Native HTML element styling only. Uses design tokens from
+   tokens.css. No classes, no IDs — those belong in
+   components.css, layout.css, or pages/*.css.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Caveat:wght@400;500&display=swap');
+
+/* ------------------------------------------------------------
+   Root & Body
+   ------------------------------------------------------------ */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  color: var(--ink-900);
+  background: var(--sand-50);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ------------------------------------------------------------
+   Headings
+   ------------------------------------------------------------ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--ink-900);
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--space-3) 0;
+}
+
+h1 { font-size: var(--fs-3xl); }
+h2 { font-size: var(--fs-2xl); }
+h3 { font-size: var(--fs-xl); }
+h4 { font-size: var(--fs-lg); }
+h5 { font-size: var(--fs-md); }
+h6 { font-size: var(--fs-base); }
+
+/* ------------------------------------------------------------
+   Paragraph & inline text
+   ------------------------------------------------------------ */
+p {
+  margin: 0 0 var(--space-4) 0;
+  color: var(--ink-700);
+}
+
+a {
+  color: var(--teal-500);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-soft);
+}
+
+a:hover {
+  color: var(--teal-700);
+  text-decoration: underline;
+}
+
+strong, b {
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+em, i {
+  font-style: italic;
+}
+
+small {
+  font-size: var(--fs-sm);
+  color: var(--ink-500);
+}
+
+/* ------------------------------------------------------------
+   Horizontal rule
+   ------------------------------------------------------------ */
+hr {
+  border: 0;
+  border-top: 1px solid var(--sand-200);
+  margin: var(--space-6) 0;
+}
+
+/* ------------------------------------------------------------
+   Code & preformatted
+   ------------------------------------------------------------ */
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  background: var(--sand-100);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-xs);
+  font-size: var(--fs-sm);
+}
+
+pre {
+  display: block;
+  padding: var(--space-4);
+  overflow-x: auto;
+  margin: 0 0 var(--space-4) 0;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* ------------------------------------------------------------
+   Blockquote
+   ------------------------------------------------------------ */
+blockquote {
+  border-left: 3px solid var(--teal-500);
+  padding-left: var(--space-4);
+  color: var(--ink-500);
+  font-style: italic;
+  margin: var(--space-5) 0;
+}
+
+/* ------------------------------------------------------------
+   Lists
+   ------------------------------------------------------------ */
+ul, ol {
+  padding-left: var(--space-5);
+  margin: 0 0 var(--space-4) 0;
+}
+
+li {
+  margin-bottom: var(--space-2);
+}
+
+/* ------------------------------------------------------------
+   Media
+   ------------------------------------------------------------ */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------------------------
+   Form element baselines
+   (Real styling lives in components.css)
+   ------------------------------------------------------------ */
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ------------------------------------------------------------
+   Tables
+   ------------------------------------------------------------ */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+}
+
+/* ------------------------------------------------------------
+   Accessibility — focus ring
+   ------------------------------------------------------------ */
+:focus-visible {
+  outline: 2px solid var(--teal-500);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ------------------------------------------------------------
+   Selection
+   ------------------------------------------------------------ */
+::selection {
+  background: var(--teal-300);
+  color: var(--ink-900);
+}
