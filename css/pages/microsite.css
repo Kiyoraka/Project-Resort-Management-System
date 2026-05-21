@@ -1,0 +1,245 @@
+/* microsite.css — shared chrome for resort.html and stall.html detail pages */
+
+/* Tab bar */
+.microsite__tabs {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--sand-200);
+  margin: 0;
+  padding: 0;
+}
+
+.microsite__tab {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: var(--space-3) var(--space-5);
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--ink-500);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: -1px; /* overlap parent border */
+}
+
+.microsite__tab:hover {
+  color: var(--ink-900);
+  background: var(--sand-100);
+}
+
+.microsite__tab.is-active {
+  color: var(--teal-700);
+  border-bottom-color: var(--teal-500);
+  background: transparent;
+}
+
+@media (min-width: 768px) {
+  .microsite__tab {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--fs-base);
+  }
+}
+
+/* Tab panels (hidden by default, only is-active visible) */
+.microsite__panel {
+  display: none;
+  animation: microsite-fade-in var(--dur-med) var(--ease-soft);
+}
+
+.microsite__panel.is-active {
+  display: block;
+}
+
+@keyframes microsite-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Common typography inside panels */
+.microsite__lead {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  color: var(--ink-500);
+  margin-bottom: var(--space-3);
+}
+
+.microsite__h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  color: var(--ink-900);
+  margin: var(--space-6) 0 var(--space-4);
+}
+
+.microsite__h2:first-child {
+  margin-top: 0;
+}
+
+.microsite__meta {
+  color: var(--ink-500);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-4);
+}
+
+/* Breadcrumb */
+.microsite__breadcrumb {
+  color: var(--sand-100);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-2);
+}
+
+.microsite__breadcrumb a {
+  color: var(--sand-100);
+  text-decoration: underline;
+  transition: color var(--dur-fast) var(--ease-soft);
+}
+
+.microsite__breadcrumb a:hover {
+  color: #fff;
+}
+
+/* Sticky tab section under hero */
+.microsite__tab-section {
+  background: var(--sand-50);
+  border-bottom: 1px solid var(--sand-200);
+  position: sticky;
+  top: 72px;
+  z-index: 10;
+}
+
+/* Booking summary card */
+.microsite__summary {
+  max-width: 500px;
+  padding: var(--space-5);
+}
+
+.microsite__summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--sand-200);
+  color: var(--ink-700);
+}
+
+.microsite__summary-row:last-of-type {
+  border-bottom: none;
+}
+
+.microsite__summary-total {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-md);
+  color: var(--ink-900);
+  padding-top: var(--space-4);
+  margin-top: var(--space-2);
+  border-top: 2px solid var(--ink-900);
+}
+
+/* About + contact grids */
+.microsite__about-grid {
+  display: grid;
+  gap: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .microsite__about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+  }
+}
+
+.microsite__about-grid figure {
+  margin: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.microsite__about-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 4 / 5;
+}
+
+.microsite__contact-grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .microsite__contact-grid {
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-6);
+  }
+}
+
+.microsite__contact-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+}
+
+.microsite__contact-list li {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--sand-200);
+  color: var(--ink-700);
+}
+
+.microsite__contact-list li:last-child {
+  border-bottom: none;
+}
+
+.microsite__contact-list strong {
+  color: var(--ink-900);
+  margin-right: var(--space-2);
+}
+
+.microsite__contact-list a {
+  color: var(--teal-500);
+}
+
+/* Amenities chip cluster */
+.microsite__amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+/* Selected state for booking room cards */
+.microsite__panels .card.is-selected {
+  outline: 3px solid var(--teal-500);
+  outline-offset: 2px;
+}
+
+.microsite__panels .card.is-selected::after {
+  content: 'Selected';
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  background: var(--teal-500);
+  color: #fff;
+  font-size: var(--fs-xs);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.microsite__panels .card {
+  position: relative;
+}
