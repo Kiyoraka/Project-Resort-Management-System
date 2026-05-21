@@ -1,0 +1,149 @@
+/* parking-map.css — Reusable parking slot grid renderer styles.
+ *
+ * Used by parking.html (read-only), user/parking.html (interactive booking),
+ * and admin/parking.html (overlay view). Colors derive from tokens.css.
+ */
+
+.parking-map {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.parking-map svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Slot tile base ---------------------------------------------------- */
+
+.parking-slot {
+  transition: all var(--dur-fast) var(--ease-soft);
+  cursor: default;
+}
+
+.parking-slot.parking-slot--interactive {
+  cursor: pointer;
+}
+
+.parking-slot.parking-slot--interactive:hover rect {
+  stroke: var(--teal-500);
+  stroke-width: 2;
+}
+
+.parking-slot.parking-slot--interactive:focus {
+  outline: none;
+}
+
+.parking-slot.parking-slot--interactive:focus rect {
+  stroke: var(--teal-700);
+  stroke-width: 3;
+}
+
+.parking-slot rect {
+  rx: 6;
+  ry: 6;
+  stroke: var(--sand-200);
+  stroke-width: 1;
+  fill: var(--sand-50);
+  transition: all var(--dur-fast) var(--ease-soft);
+}
+
+.parking-slot text {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  fill: var(--ink-700);
+  text-anchor: middle;
+  dominant-baseline: middle;
+  pointer-events: none;
+}
+
+/* --- Status variants --------------------------------------------------- */
+
+.parking-slot--available rect {
+  fill: rgba(31, 122, 111, 0.15);
+  stroke: var(--teal-500);
+}
+.parking-slot--available text {
+  fill: var(--teal-700);
+}
+
+.parking-slot--occupied rect {
+  fill: rgba(184, 85, 58, 0.18);
+  stroke: var(--terra-500);
+}
+.parking-slot--occupied text {
+  fill: var(--terra-500);
+}
+
+.parking-slot--maintenance rect {
+  fill: rgba(244, 146, 109, 0.2);
+  stroke: var(--coral-500);
+  stroke-dasharray: 4 2;
+}
+.parking-slot--maintenance text {
+  fill: var(--coral-500);
+}
+
+.parking-slot--selected rect {
+  fill: rgba(31, 122, 111, 0.35);
+  stroke: var(--teal-500);
+  stroke-width: 3;
+}
+.parking-slot--selected text {
+  fill: var(--teal-700);
+  font-weight: 700;
+}
+
+/* --- Legend ----------------------------------------------------------- */
+
+.parking-map__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  margin-top: var(--space-4);
+  font-size: var(--fs-sm);
+  color: var(--ink-700);
+}
+
+.parking-map__legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.parking-map__legend-swatch {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-xs);
+}
+
+.parking-map__legend-swatch--available {
+  background: rgba(31, 122, 111, 0.4);
+  border: 1px solid var(--teal-500);
+}
+.parking-map__legend-swatch--occupied {
+  background: rgba(184, 85, 58, 0.4);
+  border: 1px solid var(--terra-500);
+}
+.parking-map__legend-swatch--maintenance {
+  background: rgba(244, 146, 109, 0.4);
+  border: 1px solid var(--coral-500);
+}
+.parking-map__legend-swatch--selected {
+  background: rgba(31, 122, 111, 0.6);
+  border: 3px solid var(--teal-500);
+}
+
+/* --- Stats line ------------------------------------------------------- */
+
+.parking-map__stats {
+  text-align: center;
+  margin-top: var(--space-3);
+  color: var(--ink-500);
+  font-size: var(--fs-sm);
+}
