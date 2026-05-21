@@ -1,0 +1,101 @@
+/* tokens.css — Modern Beach Resort 2026 design tokens */
+/* All other CSS files reference these via var(--token-name) */
+
+:root {
+  /* Unbleached neutral foundations (replace pure white) */
+  --sand-50:  #FAF7F0;   /* paper / off-white background */
+  --sand-100: #F2EBDC;   /* limestone */
+  --sand-200: #E5DAC1;   /* warm sand */
+  --sand-300: #D4C3A1;   /* driftwood */
+
+  /* Primary - Deep Teal (modern beach, not bright sky) */
+  --teal-300: #5EBFB5;
+  --teal-500: #1F7A6F;   /* primary brand */
+  --teal-700: #0F4F47;
+
+  /* Accent - Sunset Coral (CTA highlight) */
+  --coral-400: #F4926D;
+  --coral-500: #E36F4D;   /* primary CTA */
+
+  /* Earth - Olive & Terracotta (secondary accents) */
+  --olive-400: #8A9A5B;
+  --olive-600: #5C6E2D;
+  --terra-500: #B8553A;
+
+  /* Ink - warm-leaning, not blue-black */
+  --ink-900: #1F1B14;
+  --ink-700: #3D3528;
+  --ink-500: #6B6050;
+  --ink-300: #A89E8B;
+
+  /* Geometry */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Type */
+  --font-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --font-sans:    "Inter", system-ui, -apple-system, sans-serif;
+  --font-script:  "Caveat", "Dancing Script", cursive;
+
+  /* Type scale (modular, 1.25 ratio) */
+  --fs-xs:   12px;
+  --fs-sm:   14px;
+  --fs-base: 16px;
+  --fs-md:   18px;
+  --fs-lg:   22px;
+  --fs-xl:   28px;
+  --fs-2xl:  36px;
+  --fs-3xl:  48px;
+  --fs-display: 72px;
+
+  /* Shadows - soft, warm-toned */
+  --shadow-sm: 0 1px 2px rgba(31, 27, 20, 0.06);
+  --shadow-md: 0 6px 20px rgba(31, 27, 20, 0.08);
+  --shadow-lg: 0 20px 48px rgba(31, 27, 20, 0.12);
+
+  /* Motion */
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 180ms;
+  --dur-med:  300ms;
+  --dur-slow: 600ms;
+
+  /* Breakpoints (for reference — used via media queries) */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+
+  /* Spacing scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+}
+
+[data-theme="dark"] {
+  /* Moonlit-cove dark mode - warm-leaning, not pure black */
+  --sand-50:  #14110B;
+  --sand-100: #1E1A12;
+  --sand-200: #2A241A;
+  --sand-300: #3A3225;
+
+  --ink-900: #F5EFE0;
+  --ink-700: #CFC6B3;
+  --ink-500: #998F7C;
+  --ink-300: #6B6453;
+
+  --teal-500: #6FCFC2;
+  --coral-500: #F19378;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.50);
+}
