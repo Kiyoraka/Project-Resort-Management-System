@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KIYO COAST - Coastal Sanctuaries of Malaysia</title>
+  <meta name="description" content="Three resorts, four stalls, one shoreline. Bookable stays and parking on Malaysia's east coast.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/landing.css">
+</head>
+<body>
+  <div data-component="site-header"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__media">
+      <img src="assets/img/landing-hero.jpg" alt="Malaysia coast at golden hour">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <h1 class="hero__title">Where the Tide Greets the Shore</h1>
+      <p class="hero__subtitle">Discover Malaysia's coastal sanctuaries.</p>
+      <div class="hero__cta">
+        <a href="resorts.html" class="btn btn--primary btn--lg">Explore Resorts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section landing__about">
+    <div class="container">
+      <div class="landing__about-grid">
+        <figure class="landing__about-image">
+          <img src="assets/img/about-hero.jpg" alt="Coastal living moment">
+        </figure>
+        <div class="landing__about-text">
+          <p class="section__eyebrow">Our story</p>
+          <h2 class="section__title">Coastal living, redefined.</h2>
+          <p>Three resorts, four stalls, one shoreline. Every stay curated, every meal local, every moment unhurried.</p>
+          <a href="contact.html" class="btn btn--text">&rarr; Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Resorts -->
+  <section class="section landing__resorts">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Stays</p>
+        <h2 class="section__title">Featured Resorts</h2>
+        <p class="section__lead">Three shorelines. Three sanctuaries.</p>
+      </div>
+      <div class="grid grid--staggered" data-resort-grid></div>
+    </div>
+  </section>
+
+  <!-- Coastal Stalls Carousel -->
+  <section class="section landing__stalls">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Local</p>
+        <h2 class="section__title">Coastal Stalls</h2>
+        <p class="section__lead">Local flavors, handmade goods.</p>
+      </div>
+      <div class="landing__carousel">
+        <button class="landing__carousel-btn landing__carousel-btn--prev" aria-label="Previous">&lsaquo;</button>
+        <div class="landing__carousel-track" data-stall-carousel></div>
+        <button class="landing__carousel-btn landing__carousel-btn--next" aria-label="Next">&rsaquo;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parking CTA Banner -->
+  <section class="landing__parking-cta">
+    <div class="container">
+      <h2 class="landing__parking-title">Reserve your slot before you arrive</h2>
+      <a href="parking.html" class="btn btn--primary btn--lg">Book Parking</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <h4>Kiyo Coast</h4>
+        <p>Coastal sanctuaries of Malaysia. Booked easy. Stayed long.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="resorts.html">Resorts</a></li>
+          <li><a href="stalls.html">Stalls</a></li>
+          <li><a href="parking.html">Parking</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="register.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">&copy; 2026 Kiyo Coast. All rights reserved.</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/components/toast.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/landing.js"></script>
+</body>
+</html>
