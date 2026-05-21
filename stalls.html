@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stalls - KIYO COAST</title>
+  <meta name="description" content="Four stalls scattered along Malaysia's coastline. Eat, drink, browse, rent.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <style>
+    .stalls__filters { margin-bottom: var(--space-6); }
+    .chip.is-active { background: var(--teal-500); color: #fff; border-color: var(--teal-500); }
+    .stalls__empty { text-align: center; padding: var(--space-7) 0; color: var(--ink-500); }
+  </style>
+</head>
+<body>
+  <div data-component="site-header"></div>
+
+  <main class="page stalls-page">
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Local</p>
+          <h1 class="section__title">Local flavors, handmade goods.</h1>
+          <p class="section__lead">Four stalls scattered along Malaysia's coastline. Eat, drink, browse, rent.</p>
+        </div>
+
+        <div class="stalls__filters cluster cluster--center" role="group" aria-label="Filter by category">
+          <button class="chip is-active" data-cat="all">All</button>
+          <button class="chip" data-cat="Food">Food</button>
+          <button class="chip" data-cat="Drink">Drink</button>
+          <button class="chip" data-cat="Crafts">Crafts</button>
+          <button class="chip" data-cat="Rentals">Rentals</button>
+        </div>
+
+        <div class="grid grid--4" data-stall-grid></div>
+
+        <div class="stalls__empty" data-stall-empty hidden>
+          <p>No stalls in this category right now.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <h4>Kiyo Coast</h4>
+        <p>Coastal sanctuaries of Malaysia. Booked easy. Stayed long.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="resorts.html">Resorts</a></li>
+          <li><a href="stalls.html">Stalls</a></li>
+          <li><a href="parking.html">Parking</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="register.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">&copy; 2026 Kiyo Coast. All rights reserved.</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/components/toast.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/stalls.js"></script>
+</body>
+</html>
