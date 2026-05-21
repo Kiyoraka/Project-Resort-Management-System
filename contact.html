@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reach Kiyo Coast for reservations, press, partnerships, and guest support across Bachok, Cherating, and Pangkor.">
+  <title>Contact - KIYO COAST</title>
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <style>
+    .contact__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-5);
+    }
+    @media (min-width: 768px) {
+      .contact__grid { grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+    }
+    .contact__info-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--space-4) 0;
+    }
+    .contact__info-list li {
+      padding: var(--space-2) 0;
+      border-bottom: 1px solid var(--sand-200);
+    }
+    .contact__info-list li:last-child { border-bottom: none; }
+    .contact__info-list strong { color: var(--ink-900); margin-right: var(--space-2); }
+    .contact__map {
+      margin-top: var(--space-4);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      height: 280px;
+    }
+    .contact__map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .contact__form .field { margin-bottom: var(--space-4); }
+  </style>
+</head>
+<body>
+  <div data-component="site-header"></div>
+
+  <main>
+    <section class="hero hero--sm contact__hero">
+      <div class="hero__media"><img src="assets/img/landing-hero.jpg" alt=""></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <h1 class="hero__title">Get in touch</h1>
+        <p class="hero__subtitle">For partnerships, press, or guest inquiries.</p>
+      </div>
+    </section>
+
+    <section class="section contact__main">
+      <div class="container">
+        <div class="contact__grid">
+          <!-- Left: info card -->
+          <div class="card contact__info">
+            <h2 class="card__title">Reach us</h2>
+            <ul class="contact__info-list">
+              <li><strong>Phone:</strong> <a href="tel:+6091234567">+60 9-123 4567</a></li>
+              <li><strong>Email:</strong> <a href="mailto:hello@kiyocoast.my">hello@kiyocoast.my</a></li>
+              <li><strong>Address:</strong> Bachok Coastal Office<br>Kelantan, Malaysia 16310</li>
+              <li><strong>Hours:</strong> Mon&ndash;Fri 09:00&ndash;18:00 MYT</li>
+            </ul>
+            <div class="contact__map">
+              <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=102.40%2C6.05%2C102.50%2C6.10&layer=mapnik" loading="lazy" title="Office location map" frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!-- Right: form card -->
+          <form class="card contact__form" id="contactForm" novalidate>
+            <h2 class="card__title">Send a message</h2>
+
+            <div class="field">
+              <label class="label" for="contactName">Name</label>
+              <input class="input" type="text" id="contactName" name="name" required minlength="2">
+              <span class="field__error" data-error-for="name"></span>
+            </div>
+
+            <div class="field">
+              <label class="label" for="contactEmail">Email</label>
+              <input class="input" type="email" id="contactEmail" name="email" required>
+              <span class="field__error" data-error-for="email"></span>
+            </div>
+
+            <div class="field">
+              <label class="label" for="contactSubject">Subject</label>
+              <select class="select" id="contactSubject" name="subject" required>
+                <option value="">Choose a topic&hellip;</option>
+                <option value="reservation">Reservation question</option>
+                <option value="press">Press inquiry</option>
+                <option value="partnership">Partnership / vendor</option>
+                <option value="other">Something else</option>
+              </select>
+              <span class="field__error" data-error-for="subject"></span>
+            </div>
+
+            <div class="field">
+              <label class="label" for="contactMessage">Message</label>
+              <textarea class="textarea" id="contactMessage" name="message" required minlength="10" rows="6"></textarea>
+              <span class="field__error" data-error-for="message"></span>
+            </div>
+
+            <div class="cluster cluster--end">
+              <button type="submit" class="btn btn--primary">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <h3 class="site-footer__brand">KIYO COAST</h3>
+          <p class="site-footer__tagline">Coastal stays, curated.</p>
+        </div>
+        <div class="site-footer__col">
+          <h4 class="site-footer__heading">Explore</h4>
+          <ul class="site-footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#resorts">Resorts</a></li>
+            <li><a href="index.html#experiences">Experiences</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h4 class="site-footer__heading">Company</h4>
+          <ul class="site-footer__list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h4 class="site-footer__heading">Legal</h4>
+          <ul class="site-footer__list">
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 Kiyo Coast. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/components/toast.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    (async () => {
+      if (window.app?.ready) await window.app.ready;
+
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+
+      const showError = (name, msg) => {
+        const el = form.querySelector(`[data-error-for="${name}"]`);
+        if (el) el.textContent = msg || '';
+        const input = form.querySelector(`[name="${name}"]`);
+        if (input) input.classList.toggle('input--error', !!msg);
+      };
+
+      const clearErrors = () => {
+        form.querySelectorAll('[data-error-for]').forEach(el => el.textContent = '');
+        form.querySelectorAll('.input--error').forEach(el => el.classList.remove('input--error'));
+      };
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        clearErrors();
+
+        const data = Object.fromEntries(new FormData(form));
+        let hasError = false;
+
+        if (!data.name || data.name.trim().length < 2) {
+          showError('name', 'Please enter your name (2+ characters).');
+          hasError = true;
+        }
+        const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRe.test(data.email || '')) {
+          showError('email', 'Please enter a valid email address.');
+          hasError = true;
+        }
+        if (!data.subject) {
+          showError('subject', 'Please choose a topic.');
+          hasError = true;
+        }
+        if (!data.message || data.message.trim().length < 10) {
+          showError('message', 'Message must be at least 10 characters.');
+          hasError = true;
+        }
+
+        if (hasError) {
+          window.toast?.error?.('Please fix the highlighted fields.');
+          return;
+        }
+
+        // Mock success — no real backend
+        window.toast?.success?.('Thanks! We will reply within one business day.');
+        form.reset();
+      });
+    })();
+  </script>
+</body>
+</html>
