@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-stall-title-tag>Stall - KIYO COAST</title>
+  <meta name="description" content="Discover a coastal stall — menu, story, and contact details. KIYO COAST microsite.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/microsite.css">
+
+  <style>
+    /* Page-specific tweaks layered on top of microsite.css */
+    .microsite__breadcrumb {
+      color: var(--sand-100);
+      font-size: var(--fs-sm);
+      margin-bottom: var(--space-2);
+    }
+    .microsite__breadcrumb a {
+      color: var(--sand-100);
+      text-decoration: underline;
+    }
+    .microsite__tab-section {
+      border-bottom: 1px solid var(--sand-200);
+      background: var(--sand-50);
+      position: sticky;
+      top: 72px;
+      z-index: 10;
+    }
+    .stall__visit-cta {
+      text-align: center;
+      color: var(--ink-500);
+      margin-top: var(--space-5);
+    }
+    .product-card {
+      padding: var(--space-3);
+    }
+    .product-card__price {
+      font-family: var(--font-display);
+      font-size: var(--fs-lg);
+      color: var(--teal-700);
+    }
+    .product-card__stock {
+      font-size: var(--fs-xs);
+      color: var(--ink-500);
+      margin-top: var(--space-2);
+    }
+  </style>
+</head>
+<body>
+  <div data-component="site-header"></div>
+
+  <!-- Hero -->
+  <section class="hero hero--sm">
+    <div class="hero__media">
+      <img data-stall-cover src="" alt="">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <nav class="microsite__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> &rsaquo;
+        <a href="stalls.html">Stalls</a> &rsaquo;
+        <span data-stall-name>...</span>
+      </nav>
+      <h1 class="hero__title" data-stall-title>Loading stall...</h1>
+      <p class="hero__subtitle" data-stall-meta></p>
+    </div>
+  </section>
+
+  <!-- Tab bar (sticky) -->
+  <section class="microsite__tab-section">
+    <div class="container">
+      <div class="microsite__tabs" role="tablist" aria-label="Stall sections">
+        <button class="microsite__tab is-active" data-tab="home" role="tab" aria-selected="true" id="tab-home" aria-controls="panel-home">Home</button>
+        <button class="microsite__tab" data-tab="about" role="tab" aria-selected="false" id="tab-about" aria-controls="panel-about">About</button>
+        <button class="microsite__tab" data-tab="contact" role="tab" aria-selected="false" id="tab-contact" aria-controls="panel-contact">Contact</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tab panels -->
+  <section class="section microsite__panels container">
+    <!-- HOME -->
+    <div class="microsite__panel is-active" data-panel="home" id="panel-home" role="tabpanel" aria-labelledby="tab-home">
+      <p class="microsite__lead" data-stall-tagline></p>
+      <p data-stall-description></p>
+      <p class="microsite__meta"><strong>Hours:</strong> <span data-stall-hours></span></p>
+
+      <h2 class="microsite__h2">Menu / Products</h2>
+      <div class="grid grid--4" data-stall-products></div>
+
+      <p class="stall__visit-cta"><em>Visit the stall in person to order and pay onsite.</em></p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="microsite__panel" data-panel="about" id="panel-about" role="tabpanel" aria-labelledby="tab-about" hidden>
+      <h2 class="microsite__h2">Our story</h2>
+      <p data-stall-about-story></p>
+      <p class="microsite__meta"><strong>Located at:</strong> <a data-stall-resort-link href=""></a></p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="microsite__panel" data-panel="contact" id="panel-contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
+      <div class="microsite__contact-grid">
+        <div>
+          <h2 class="microsite__h2">Reach the stall</h2>
+          <ul class="microsite__contact-list">
+            <li><strong>Phone:</strong> <a data-contact-phone href=""></a></li>
+            <li><strong>Email:</strong> <a data-contact-email href=""></a></li>
+            <li><strong>Hours:</strong> <span data-contact-hours></span></li>
+          </ul>
+        </div>
+        <form class="card" data-contact-form novalidate>
+          <h2 class="card__title">Send a message</h2>
+          <div class="field">
+            <label class="label" for="contact-name">Name</label>
+            <input class="input" id="contact-name" name="name" required>
+          </div>
+          <div class="field">
+            <label class="label" for="contact-email">Email</label>
+            <input class="input" id="contact-email" type="email" name="email" required>
+          </div>
+          <div class="field">
+            <label class="label" for="contact-message">Message</label>
+            <textarea class="textarea" id="contact-message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <h4>Kiyo Coast</h4>
+        <p>Coastal sanctuaries of Malaysia. Booked easy. Stayed long.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="resorts.html">Resorts</a></li>
+          <li><a href="stalls.html">Stalls</a></li>
+          <li><a href="parking.html">Parking</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="register.html">Create account</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">&copy; 2026 Kiyo Coast. All rights reserved.</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/components/toast.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/stall-detail.js"></script>
+</body>
+</html>
