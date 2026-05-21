@@ -1,0 +1,112 @@
+[
+  {
+    "id": "user-admin",
+    "name": "Admin Master",
+    "email": "admin@gmail.com",
+    "password": "admin123",
+    "role": "admin",
+    "phone": "+60 12-345 6789",
+    "resortId": null,
+    "stallId": null,
+    "createdAt": "2026-01-01T08:00:00.000Z"
+  },
+  {
+    "id": "user-resort1",
+    "name": "Aminah Hassan",
+    "email": "resort1@gmail.com",
+    "password": "admin123",
+    "role": "resort",
+    "phone": "+60 13-456 7890",
+    "resortId": "resort-1",
+    "stallId": null,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "user-resort2",
+    "name": "Faizal Ramli",
+    "email": "resort2@gmail.com",
+    "password": "admin123",
+    "role": "resort",
+    "phone": "+60 19-234 5678",
+    "resortId": "resort-2",
+    "stallId": null,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "user-resort3",
+    "name": "Lim Chee Kong",
+    "email": "resort3@gmail.com",
+    "password": "admin123",
+    "role": "resort",
+    "phone": "+60 17-345 6781",
+    "resortId": "resort-3",
+    "stallId": null,
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "user-stall1",
+    "name": "Mak Yah Abdullah",
+    "email": "stall1@gmail.com",
+    "password": "admin123",
+    "role": "stall",
+    "phone": "+60 11-2345 6789",
+    "resortId": null,
+    "stallId": "stall-1",
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "user-stall2",
+    "name": "Pakcik Hamid",
+    "email": "stall2@gmail.com",
+    "password": "admin123",
+    "role": "stall",
+    "phone": "+60 14-567 8901",
+    "resortId": null,
+    "stallId": "stall-2",
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "user-stall3",
+    "name": "Aishah Zainal",
+    "email": "stall3@gmail.com",
+    "password": "admin123",
+    "role": "stall",
+    "phone": "+60 16-678 9012",
+    "resortId": null,
+    "stallId": "stall-3",
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "user-stall4",
+    "name": "Razali Othman",
+    "email": "stall4@gmail.com",
+    "password": "admin123",
+    "role": "stall",
+    "phone": "+60 18-789 0123",
+    "resortId": null,
+    "stallId": "stall-4",
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "user-user1",
+    "name": "Aishah Abdullah",
+    "email": "user1@gmail.com",
+    "password": "admin123",
+    "role": "user",
+    "phone": "+60 12-890 1234",
+    "resortId": null,
+    "stallId": null,
+    "createdAt": "2026-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "user-user2",
+    "name": "Lim Boon Heng",
+    "email": "user2@gmail.com",
+    "password": "admin123",
+    "role": "user",
+    "phone": "+60 13-901 2345",
+    "resortId": null,
+    "stallId": null,
+    "createdAt": "2026-01-10T08:00:00.000Z"
+  }
+]
